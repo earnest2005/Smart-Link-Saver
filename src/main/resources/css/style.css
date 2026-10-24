@@ -1,0 +1,267 @@
+/* Smart Link Saver - JavaFX CSS */
+
+.root {
+    -fx-font-family: "Inter", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    -fx-font-size: 13px;
+}
+
+.root-pane { -fx-background-color: #F7F8FA; }
+.main-area { -fx-background-color: #F7F8FA; }
+
+/* ---------- Sidebar ---------- */
+.sidebar { -fx-background-color: #0F172A; }
+
+.logo-badge {
+    -fx-background-color: #1D4ED8;
+    -fx-background-radius: 6;
+    -fx-text-fill: white;
+    -fx-font-size: 13px;
+    -fx-font-weight: 600;
+    -fx-min-width: 28; -fx-min-height: 28;
+    -fx-pref-width: 28; -fx-pref-height: 28;
+    -fx-alignment: center;
+}
+.brand-title { -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: 600; }
+
+.nav-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #94A3B8;
+    -fx-font-size: 13px;
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 9 12 9 12;
+    -fx-background-radius: 6;
+    -fx-cursor: hand;
+}
+.nav-button:hover { -fx-background-color: rgba(255,255,255,0.06); -fx-text-fill: #CBD5E1; }
+.nav-button-active, .nav-button-active:hover {
+    -fx-background-color: #1E293B;
+    -fx-text-fill: white;
+    -fx-border-color: transparent transparent transparent #3B82F6;
+    -fx-border-width: 0 0 0 3;
+    -fx-background-radius: 0 6 6 0;
+    -fx-border-radius: 0 6 6 0;
+}
+.sidebar-footer { -fx-text-fill: #475569; -fx-font-size: 11px; -fx-padding: 0 0 0 4; }
+
+/* ---------- Header ---------- */
+.page-title { -fx-font-size: 22px; -fx-font-weight: 600; -fx-text-fill: #101828; }
+
+.search-field, .app-input {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 8;
+    -fx-border-color: #D0D5DD;
+    -fx-border-radius: 8;
+    -fx-padding: 8 12 8 12;
+    -fx-text-fill: #101828;
+}
+.search-field:focused, .app-input:focused {
+    -fx-border-color: #1D4ED8;
+    -fx-border-width: 2;
+}
+.app-input .list-cell { -fx-text-fill: #101828; }
+
+.primary-button {
+    -fx-background-color: #1D4ED8;
+    -fx-text-fill: white;
+    -fx-font-weight: 600;
+    -fx-font-size: 13px;
+    -fx-background-radius: 8;
+    -fx-padding: 8 16 8 16;
+    -fx-cursor: hand;
+}
+.primary-button:hover {
+    -fx-background-color: #1E40AF;
+}
+
+/* ---------- Scroll area ---------- */
+.content-scroll { -fx-background: #F7F8FA; -fx-background-color: #F7F8FA; -fx-padding: 0; }
+.content-scroll > .viewport { -fx-background-color: #F7F8FA; }
+
+.section-title { -fx-font-size: 14px; -fx-font-weight: 600; -fx-text-fill: #101828; }
+
+/* ---------- Stat cards ---------- */
+.stat-card {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 8;
+    -fx-border-color: #E4E7EC;
+    -fx-border-radius: 8;
+    -fx-padding: 16;
+    -fx-effect: dropshadow(gaussian, rgba(16,24,40,0.04), 2, 0, 0, 1);
+}
+.stat-value { -fx-font-size: 26px; -fx-font-weight: 600; -fx-text-fill: #101828; }
+.stat-title { -fx-text-fill: #667085; -fx-font-size: 12px; }
+
+/* ---------- Filter chips ---------- */
+.chip {
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #475467;
+    -fx-border-color: #E4E7EC;
+    -fx-background-radius: 6;
+    -fx-border-radius: 6;
+    -fx-padding: 5 12 5 12;
+    -fx-font-size: 13px;
+    -fx-cursor: hand;
+}
+.chip:hover { -fx-border-color: #D0D5DD; -fx-text-fill: #344054; }
+.chip-selected, .chip-selected:hover {
+    -fx-background-color: #EFF4FF;
+    -fx-text-fill: #1D4ED8;
+    -fx-border-color: #1D4ED8;
+}
+
+/* ---------- Category tiles ---------- */
+.category-tile {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 8;
+    -fx-border-color: #E4E7EC;
+    -fx-border-radius: 8;
+    -fx-padding: 16;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(16,24,40,0.04), 2, 0, 0, 1);
+}
+.category-tile:hover {
+    -fx-border-color: #D0D5DD;
+}
+.tile-selected, .tile-selected:hover {
+    -fx-border-color: #1D4ED8;
+    -fx-border-width: 1;
+    -fx-background-color: #EFF4FF;
+}
+.tile-icon {
+    -fx-text-fill: #475467;
+    -fx-font-size: 13px;
+    -fx-background-color: #F2F4F7;
+    -fx-background-radius: 6;
+    -fx-min-width: 32; -fx-min-height: 32;
+    -fx-pref-width: 32; -fx-pref-height: 32;
+    -fx-alignment: center;
+}
+.tile-title { -fx-font-size: 14px; -fx-font-weight: 600; -fx-text-fill: #101828; }
+.tile-subtitle { -fx-text-fill: #667085; -fx-font-size: 12px; }
+
+/* ---------- Link cards ---------- */
+.link-card {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 8;
+    -fx-border-color: #E4E7EC;
+    -fx-border-radius: 8;
+    -fx-padding: 16;
+    -fx-effect: dropshadow(gaussian, rgba(16,24,40,0.04), 2, 0, 0, 1);
+}
+.link-card:hover {
+    -fx-border-color: #D0D5DD;
+}
+.card-avatar {
+    -fx-text-fill: #475467;
+    -fx-font-size: 13px;
+    -fx-background-color: #F2F4F7;
+    -fx-background-radius: 6;
+    -fx-min-width: 36; -fx-min-height: 36;
+    -fx-pref-width: 36; -fx-pref-height: 36;
+    -fx-alignment: center;
+}
+.card-title { -fx-font-size: 14px; -fx-font-weight: 600; -fx-text-fill: #101828; }
+.card-url { -fx-text-fill: #667085; -fx-font-size: 12px; }
+.category-badge {
+    -fx-background-color: #F2F4F7;
+    -fx-text-fill: #475467;
+    -fx-background-radius: 6;
+    -fx-padding: 2 8 2 8;
+    -fx-font-size: 11px;
+}
+
+.fav-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #98A2B3;
+    -fx-font-size: 18px;
+    -fx-background-radius: 6;
+    -fx-padding: 2 6 2 6;
+    -fx-cursor: hand;
+}
+.fav-button:hover { -fx-background-color: #FFFAEB; -fx-text-fill: #D97706; }
+.fav-active { -fx-text-fill: #D97706; }
+
+.card-button {
+    -fx-background-radius: 8;
+    -fx-padding: 6 12 6 12;
+    -fx-font-size: 12px;
+    -fx-cursor: hand;
+}
+.open-button { -fx-background-color: #1D4ED8; -fx-text-fill: white; }
+.open-button:hover { -fx-background-color: #1E40AF; }
+.edit-button {
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #344054;
+    -fx-border-color: #D0D5DD;
+    -fx-border-radius: 8;
+}
+.edit-button:hover { -fx-background-color: #F9FAFB; }
+.delete-button {
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #B42318;
+    -fx-border-color: #FDA29B;
+    -fx-border-radius: 8;
+}
+.delete-button:hover { -fx-background-color: #FEF3F2; }
+
+/* ---------- Empty state ---------- */
+.empty-state {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 8;
+    -fx-border-color: #E4E7EC;
+    -fx-border-radius: 8;
+    -fx-padding: 32;
+    -fx-effect: dropshadow(gaussian, rgba(16,24,40,0.04), 2, 0, 0, 1);
+}
+.empty-title { -fx-font-size: 14px; -fx-font-weight: 600; -fx-text-fill: #101828; }
+.empty-text { -fx-text-fill: #667085; -fx-font-size: 13px; }
+
+/* ---------- Toast messages ---------- */
+.toast {
+    -fx-background-radius: 8;
+    -fx-padding: 10 16 10 16;
+    -fx-font-size: 13px;
+}
+.toast-success {
+    -fx-background-color: #ECFDF3;
+    -fx-text-fill: #027A48;
+    -fx-border-color: #A6F4C5;
+    -fx-border-radius: 8;
+}
+.toast-error {
+    -fx-background-color: #FEF3F2;
+    -fx-text-fill: #B42318;
+    -fx-border-color: #FECDCA;
+    -fx-border-radius: 8;
+}
+
+/* ---------- Dialogs ---------- */
+.app-dialog { -fx-background-color: #FFFFFF; -fx-padding: 8; }
+.app-dialog .content { -fx-background-color: #FFFFFF; }
+.app-dialog .header-panel { -fx-background-color: #FFFFFF; }
+.app-dialog .label { -fx-text-fill: #344054; }
+.app-dialog .button {
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #344054;
+    -fx-background-radius: 8;
+    -fx-border-color: #D0D5DD;
+    -fx-border-radius: 8;
+    -fx-padding: 8 16 8 16;
+    -fx-cursor: hand;
+}
+.app-dialog .button:hover { -fx-background-color: #F9FAFB; }
+.app-dialog .button:default { -fx-background-color: #1D4ED8; -fx-text-fill: white; -fx-font-weight: 600; -fx-border-color: #1D4ED8; }
+.app-dialog .button:default:hover { -fx-background-color: #1E40AF; -fx-border-color: #1E40AF; }
+
+.dialog-heading { -fx-font-size: 16px; -fx-font-weight: 600; -fx-text-fill: #101828; }
+.field-label { -fx-font-weight: 600; -fx-text-fill: #344054; -fx-font-size: 13px; }
+.error-label {
+    -fx-text-fill: #B42318;
+    -fx-background-color: #FEF3F2;
+    -fx-background-radius: 8;
+    -fx-padding: 8 12 8 12;
+    -fx-border-color: #FECDCA;
+    -fx-border-radius: 8;
+}
+.app-dialog .error-label { -fx-text-fill: #B42318; }
+.app-dialog .dialog-heading { -fx-text-fill: #101828; }
